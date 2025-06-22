@@ -2,14 +2,14 @@ import { initializeApp } from 'firebase/app';
 import { getDatabase } from 'firebase/database';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBQIP8i0nF55TOLEgGhcnNbBln7JUzgQnE",
-  authDomain: "intruder-detection-syste-f5256.firebaseapp.com",
-  databaseURL: "https://intruder-detection-syste-f5256-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "intruder-detection-syste-f5256",
-  storageBucket: "intruder-detection-syste-f5256.firebasestorage.app",
-  messagingSenderId: "751169235722",
-  appId: "1:751169235722:web:b0feec85ba9798074ba8f3",
-  measurementId: "G-85WW1S8R30"
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  databaseURL: process.env.NEXT_PUBLIC_FIREBASE_DATABASE_URL,
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
+  measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID,
 };
 
 const app = initializeApp(firebaseConfig);
