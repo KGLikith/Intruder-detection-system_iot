@@ -1,4 +1,4 @@
-# IoT Intruder Detection System
+# IoT-Intruder Detection System
 
 A web-based real-time intruder detection system using Firebase and Next.js. Designed for **IoT integration**, this application enables users to remotely monitor activity, control system activation, and view intruder alerts with image snapshots.
 
