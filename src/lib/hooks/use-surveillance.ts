@@ -59,7 +59,7 @@ export function useImages() {
         setImages(imagesList);
 
         if (imagesList.length > 0) {
-          setLatestImage(imagesList[imagesList.length - 1]);
+          setLatestImage(imagesList[0]);
         }
       } else {
         setImages([]);
