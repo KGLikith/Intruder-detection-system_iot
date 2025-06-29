@@ -55,10 +55,9 @@ export function useImages() {
     const unsubscribe = onValue(imagesRef, (snapshot) => {
       const data = snapshot.val();
       if (data) {
-        const imagesList = Array.isArray(data) ? data : Object.values(data);
+        const imagesList = Array.isArray(data) ? data.reverse() : Object.values(data).reverse();
         setImages(imagesList);
-        
-        // Set latest image
+
         if (imagesList.length > 0) {
           setLatestImage(imagesList[imagesList.length - 1]);
         }
